@@ -4,12 +4,12 @@ import 'bottom_navigation_view/bottom_bar_view.dart';
 import 'app_theme.dart';
 import 'home_screen/home_screen_view.dart';
 
-class FitnessAppHomeScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  _FitnessAppHomeScreenState createState() => _FitnessAppHomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
+class _HomeScreenState extends State<HomeScreen>
     with TickerProviderStateMixin {
   AnimationController? animationController;
 
@@ -28,7 +28,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
 
     animationController = AnimationController(
         duration: const Duration(milliseconds: 600), vsync: this);
-    tabBody = MyDiaryScreen(animationController: animationController);
+    tabBody = MyScreen(animationController: animationController);
     super.initState();
   }
 
@@ -85,7 +85,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 }
                 setState(() {
                   tabBody =
-                      MyDiaryScreen(animationController: animationController);
+                      MyScreen(animationController: animationController);
                 });
               });
             } else if (index == 1 || index == 3) {

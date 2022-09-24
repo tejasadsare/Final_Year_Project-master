@@ -3,11 +3,11 @@ import 'package:best_flutter_ui_templates/main.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-class MediterranesnDietView extends StatelessWidget {
+class JobCardView extends StatelessWidget {
   final AnimationController? animationController;
   final Animation<double>? animation;
 
-  const MediterranesnDietView(
+  const JobCardView(
       {Key? key, this.animationController, this.animation})
       : super(key: key);
 
@@ -124,21 +124,7 @@ class MediterranesnDietView extends StatelessWidget {
                                                   padding:
                                                       const EdgeInsets.only(
                                                           left: 4, bottom: 3),
-                                                  // child: Text(
-                                                  //   'Kcal',
-                                                  //   textAlign: TextAlign.center,
-                                                  //   style: TextStyle(
-                                                  //     fontFamily:
-                                                  //         AppTheme
-                                                  //             .fontName,
-                                                  //     fontWeight:
-                                                  //         FontWeight.w600,
-                                                  //     fontSize: 12,
-                                                  //     letterSpacing: -0.2,
-                                                  //     color: AppTheme
-                                                  //         .grey
-                                                  //         .withOpacity(0.5),
-                                                  //   ),
+
                                                   // ),
                                                 ),
                                               ],
@@ -223,22 +209,7 @@ class MediterranesnDietView extends StatelessWidget {
                                                   padding:
                                                       const EdgeInsets.only(
                                                           left: 8, bottom: 3),
-                                                  // child: Text(
-                                                  //   'Kcal',
-                                                  //   textAlign: TextAlign.center,
-                                                  //   style: TextStyle(
-                                                  //     fontFamily:
-                                                  //         AppTheme
-                                                  //             .fontName,
-                                                  //     fontWeight:
-                                                  //         FontWeight.w600,
-                                                  //     fontSize: 12,
-                                                  //     letterSpacing: -0.2,
-                                                  //     color: AppTheme
-                                                  //         .grey
-                                                  //         .withOpacity(0.5),
-                                                  //   ),
-                                                  // ),
+
                                                 ),
                                               ],
                                             )

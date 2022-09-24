@@ -1,5 +1,5 @@
-class MealsListData {
-  MealsListData({
+class ActivityData {
+  ActivityData({
     this.imagePath = '',
     this.titleTxt = '',
     this.startColor = '',
@@ -15,8 +15,8 @@ class MealsListData {
   List<String>? meals;
   int kacl;
 
-  static List<MealsListData> tabIconsList = <MealsListData>[
-    MealsListData(
+  static List<ActivityData> tabIconsList = <ActivityData>[
+    ActivityData(
       imagePath: 'assets/auto_service_management_app/inventory.png',
       titleTxt: 'Inventory',
       //kacl: 525,
@@ -24,7 +24,7 @@ class MealsListData {
       startColor: '#FA7D82',
       endColor: '#FFB295',
     ),
-    MealsListData(
+    ActivityData(
       imagePath: 'assets/auto_service_management_app/report.png',
       titleTxt: 'Reports',
       //kacl: 602,
@@ -32,7 +32,7 @@ class MealsListData {
       startColor: '#738AE6',
       endColor: '#5C5EDD',
     ),
-    MealsListData(
+    ActivityData(
       imagePath: 'assets/auto_service_management_app/analytics.png',
       titleTxt: 'Analytics',
       //kacl: 0,
@@ -40,7 +40,7 @@ class MealsListData {
       startColor: '#FE95B6',
       endColor: '#FF5287',
     ),
-    MealsListData(
+    ActivityData(
       imagePath: 'assets/auto_service_management_app/staff.png',
       titleTxt: 'Staff',
       //kacl: 0,

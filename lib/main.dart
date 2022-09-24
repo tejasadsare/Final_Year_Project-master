@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         textTheme: AppTheme.textTheme,
         platform: TargetPlatform.iOS,
       ),
-      home: FitnessAppHomeScreen(),
+      home: HomeScreen(),
     );
   }
 }

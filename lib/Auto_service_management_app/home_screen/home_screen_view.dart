@@ -1,21 +1,20 @@
-//import 'package:best_flutter_ui_templates/auto_service_management_app/ui_view/body_measurement.dart';
-//import 'package:best_flutter_ui_templates/auto_service_management_app/ui_view/glass_view.dart';
+
 import 'package:best_flutter_ui_templates/Auto_service_management_app/ui_view/job_card_view.dart';
 import 'package:best_flutter_ui_templates/Auto_service_management_app/ui_view/title_view.dart';
 import 'package:best_flutter_ui_templates/Auto_service_management_app/app_theme.dart';
 import 'package:best_flutter_ui_templates/Auto_service_management_app/home_screen/activity_list_view.dart';
-//import 'package:best_flutter_ui_templates/auto_service_management_app/my_diary/water_view.dart';
+
 import 'package:flutter/material.dart';
 
-class MyDiaryScreen extends StatefulWidget {
-  const MyDiaryScreen({Key? key, this.animationController}) : super(key: key);
+class MyScreen extends StatefulWidget {
+  const MyScreen({Key? key, this.animationController}) : super(key: key);
 
   final AnimationController? animationController;
   @override
-  _MyDiaryScreenState createState() => _MyDiaryScreenState();
+  _MyScreenState createState() => _MyScreenState();
 }
 
-class _MyDiaryScreenState extends State<MyDiaryScreen>
+class _MyScreenState extends State<MyScreen>
     with TickerProviderStateMixin {
   Animation<double>? topBarAnimation;
 
@@ -71,7 +70,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
       ),
     );
     listViews.add(
-      MediterranesnDietView(
+      JobCardView(
         animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController!,
             curve:
@@ -92,7 +91,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
     );
 
     listViews.add(
-      MealsListView(
+      ActivityView(
         mainScreenAnimation: Tween<double>(begin: 0.0, end: 1.0).animate(
             CurvedAnimation(
                 parent: widget.animationController!,
@@ -102,58 +101,6 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
       ),
     );
 
-    /*listViews.add(
-      TitleView(
-        titleTxt: 'Body measurement',
-        subTxt: 'Today',
-        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController!,
-            curve:
-                Interval((1 / count) * 4, 1.0, curve: Curves.fastOutSlowIn))),
-        animationController: widget.animationController!,
-      ),
-    );*/
-
-    /*listViews.add(
-      BodyMeasurementView(
-        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController!,
-            curve:
-                Interval((1 / count) * 5, 1.0, curve: Curves.fastOutSlowIn))),
-        animationController: widget.animationController!,
-      ),
-    );*/
-    /*listViews.add(
-      TitleView(
-        titleTxt: 'Water',
-        subTxt: 'Aqua SmartBottle',
-        animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController!,
-            curve:
-                Interval((1 / count) * 6, 1.0, curve: Curves.fastOutSlowIn))),
-        animationController: widget.animationController!,
-      ),
-    );*/
-
-    /*listViews.add(
-      WaterView(
-        mainScreenAnimation: Tween<double>(begin: 0.0, end: 1.0).animate(
-            CurvedAnimation(
-                parent: widget.animationController!,
-                curve: Interval((1 / count) * 7, 1.0,
-                    curve: Curves.fastOutSlowIn))),
-        mainScreenAnimationController: widget.animationController!,
-      ),
-    );*/
-    /*listViews.add(
-      GlassView(
-          animation: Tween<double>(begin: 0.0, end: 1.0).animate(
-              CurvedAnimation(
-                  parent: widget.animationController!,
-                  curve: Interval((1 / count) * 8, 1.0,
-                      curve: Curves.fastOutSlowIn))),
-          animationController: widget.animationController!),
-    );*/
   }
 
   Future<bool> getData() async {
@@ -262,22 +209,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                 ),
                               ),
                             ),
-                            /*SizedBox(
-                              height: 38,
-                              width: 38,
-                              child: InkWell(
-                                highlightColor: Colors.transparent,
-                                borderRadius: const BorderRadius.all(
-                                    Radius.circular(32.0)),
-                                onTap: () {},
-                                child: Center(
-                                  *//*child: Icon(
-                                    Icons.keyboard_arrow_left,
-                                    color: AppTheme.grey,
-                                  ),*//*
-                                ),
-                              ),
-                            ),*/
+
                             Padding(
                               padding: const EdgeInsets.only(
                                 left: 8,
@@ -288,23 +220,9 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                 children: <Widget>[
                                   Padding(
                                     padding: const EdgeInsets.only(right: 8),
-                                    /*child: Icon(
-                                      Icons.calendar_today,
-                                      color: AppTheme.grey,
-                                      size: 18,
-                                    ),*/
+
                                   ),
-                                  /*Text(
-                                    '15 May',
-                                    textAlign: TextAlign.left,
-                                    style: TextStyle(
-                                      fontFamily: AppTheme.fontName,
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 18,
-                                      letterSpacing: -0.2,
-                                      color: AppTheme.darkerText,
-                                    ),
-                                  ),*/
+
                                 ],
                               ),
                             ),
