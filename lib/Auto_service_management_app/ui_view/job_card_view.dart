@@ -99,7 +99,7 @@ class JobCardView extends StatelessWidget {
                                                   width: 28,
                                                   height: 28,
                                                   child: Image.asset(
-                                                      "assets/auto_service_management_app/eaten.png"),
+                                                      "assets/auto_service_management_app/burned.png"),
                                                 ),
                                                 Padding(
                                                   padding:
