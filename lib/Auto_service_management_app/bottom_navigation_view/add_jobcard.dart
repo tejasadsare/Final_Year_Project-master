@@ -13,9 +13,12 @@ class AddJob extends StatelessWidget {
 
     return MaterialApp(
 
+      debugShowCheckedModeBanner: false,
+
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.orangeAccent,
+
+          backgroundColor: Color(0xFF00B6F0),
           title: const Text(
             'Add Job Card',
             style: TextStyle(
@@ -183,7 +186,7 @@ class MyCustomFormState extends State<MyCustomForm> {
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll<Color>(Colors.orange),
+                backgroundColor: MaterialStatePropertyAll<Color>(Color(0xFF00B6F0)),
 
               ),
               onPressed: () {
