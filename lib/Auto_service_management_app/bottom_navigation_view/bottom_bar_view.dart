@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 import 'package:best_flutter_ui_templates/Auto_service_management_app/app_theme.dart';
+import 'package:best_flutter_ui_templates/Auto_service_management_app/bottom_navigation_view/add_jobcard.dart';
 import 'package:best_flutter_ui_templates/Auto_service_management_app/models/tabIcon_data.dart';
 import 'package:best_flutter_ui_templates/main.dart';
 import 'package:flutter/material.dart';
@@ -166,10 +167,26 @@ class _BottomBarViewState extends State<BottomBarView>
                           highlightColor: Colors.transparent,
                           focusColor: Colors.transparent,
                           onTap: widget.addClick,
-                          child: Icon(
-                            Icons.add,
-                            color: AppTheme.white,
-                            size: 32,
+
+                          child: ElevatedButton(
+                            child: Icon(
+                              Icons.add,
+                              color: AppTheme.white,
+                              size: 30,
+                            ),
+                           style: ButtonStyle(
+                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                           RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0),
+
+                            )
+                           )
+                          ),
+                            onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const AddJob()),
+                              );
+                            },
                           ),
                         ),
                       ),
