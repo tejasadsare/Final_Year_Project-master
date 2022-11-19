@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "638199500622",
+    "project_id": "garage-b355a",
+    "storage_bucket": "garage-b355a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638199500622:android:e39c4a2a5f3566be53581f",
+        "android_client_info": {
+          "package_name": "com.example.best_flutter_ui_templates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638199500622-s11e9qvpo651fu3hb7h0ks8h1fed99hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUdgTCk2DJIU0SkzgF8SIqhnNyHXmHVZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638199500622-s11e9qvpo651fu3hb7h0ks8h1fed99hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
