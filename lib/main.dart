@@ -5,9 +5,11 @@ import 'package:flutter/services.dart';
 //import 'navigation_home_screen.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:best_flutter_ui_templates/Auto_service_management_app/app_home_screen.dart';
+import'package:firebase_core/firebase_core.dart';
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown
